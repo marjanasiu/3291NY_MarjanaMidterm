@@ -33,6 +33,7 @@ public class UnitTestingMath {
     public void FindMissing() {
 
         int [] array1 = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
+        int [] array1 = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
         int [] array2 = new int[]{5, 1, 2, 3};
 
         System.out.println("Testing FindMissing method:");
