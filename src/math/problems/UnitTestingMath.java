@@ -1,6 +1,7 @@
 package math.problems;
 
 import org.testng.annotations.Test;
+import static math.problems.Fibonacci.*;
 import static org.testng.AssertJUnit.*;
 
 public class UnitTestingMath {
@@ -31,8 +32,6 @@ public class UnitTestingMath {
 
     @Test
     public void FindMissing() {
-
-        int [] array1 = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
         int [] array1 = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
         int [] array2 = new int[]{5, 1, 2, 3};
 
@@ -40,8 +39,4 @@ public class UnitTestingMath {
         assertEquals(9, FindMissingNumber.FindMissing(array1));
         assertEquals(4, FindMissingNumber.FindMissing(array2));
     }
-
-
-
-
 }
