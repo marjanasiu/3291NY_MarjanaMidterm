@@ -34,8 +34,5 @@ public class FortuneEmployee {
 		System.out.println("Assigning a new department to the employee.");
 		employeeInfo.assignDepartment("Marketing");
 		System.out.println("New employee department: " + employeeInfo.getEmployeeDepartment());
-
-
 	}
-
 }

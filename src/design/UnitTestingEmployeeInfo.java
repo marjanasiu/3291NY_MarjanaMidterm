@@ -5,14 +5,12 @@ import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class UnitTestingEmployeeInfo {
-
     private EmployeeInfo employeeInfo;
 
     @BeforeTest
     public void initTest() {
 
         employeeInfo = new EmployeeInfo();
-
         employeeInfo.setEmployeeName("Marjana Aktar");
         employeeInfo.setEmployeeId(56789);
         employeeInfo.assignDepartment("Human Resources");
@@ -22,7 +20,6 @@ public class UnitTestingEmployeeInfo {
 
     @Test
     public void testEmployeeName() {
-
         System.out.println("Testing employeeName()");
         assertEquals("Marjana Aktar", employeeInfo.employeeName());
     }

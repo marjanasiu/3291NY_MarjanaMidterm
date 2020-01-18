@@ -1,10 +1,9 @@
 package datastructure;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Stack;
 
 public class DataReader {
@@ -25,7 +24,8 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = "/Users/ahermassi/Documents/IdeaProjects/MidtermJuly2019/src/data/self-driving-car";
+
+		String textFile = "/Users/marjanaaktar/documents/MidtermJuly2019/src/data/self-driving-car";
 		Stack<String> stack = new Stack();
 		LinkedList<String> linkedList = new LinkedList<>();
 
@@ -37,11 +37,11 @@ public class DataReader {
 					stack.push(word);
 					linkedList.add(word);
 				}
-
 			}
 
 		} catch (IOException e) {
 			System.err.format("IOException: %s%n", e);
+			System.out.println("Attached file was not readable.");
 		}
 
 		System.out.println("First word pushed: " + stack.firstElement());
@@ -57,5 +57,4 @@ public class DataReader {
 			System.out.print(iterator.next() + " ");
 		}
 	}
-
 }

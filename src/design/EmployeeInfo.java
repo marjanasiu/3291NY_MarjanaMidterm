@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class EmployeeInfo implements Employee {
 
 	/*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
-	 * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
+	 * Also, Employee interface can be implemented into an abstract class. So create an Abstract class
 	 * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
 	 * go to FortuneEmployee class to apply all the fields and attributes.
 	 *
@@ -26,7 +26,12 @@ public class EmployeeInfo implements Employee {
 	private String employeeDepartment;
 	private int employeeSalary;
 
-
+	public EmployeeInfo(int employeeId, String employeeName, String employeeDepartment, int employeeSalary) {
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeDepartment = employeeDepartment;
+		this.employeeSalary = employeeSalary;
+	}
 	/*
 	 * You must implement the logic for below 2 methods and
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -40,11 +45,9 @@ public class EmployeeInfo implements Employee {
 	public EmployeeInfo() {}
 
 	public EmployeeInfo(int employeeId){
-
 		this.employeeId = employeeId;
 	}
 	public EmployeeInfo(String name, int employeeId){
-
 		this.employeeName = name;
 		this.employeeId = employeeId;
 	}
@@ -168,6 +171,11 @@ public class EmployeeInfo implements Employee {
 	}
 
 	@Override
+	public void assignDepartment() {
+
+	}
+
+	// @Override
 	public void assignDepartment(String department) {
 
 		this.employeeDepartment = department;
